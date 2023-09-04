@@ -1,0 +1,22 @@
+Cython
+pandas
+geopandas
+Shapely
+pyproj
+psutil
+Requests
+gsee @ git+https://github.com/VeraKowalczuk/gsee.git@master
+tqdm
+jupyter
+xarray
+scipy
+rioxarray
+matplotlib
+netcdf4
+ratelimit
+setuptools
+PyYAML
+Cartopy
+sorcery
+spinx
+myst-parser

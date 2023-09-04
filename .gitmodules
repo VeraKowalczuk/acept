@@ -1,0 +1,4 @@
+[submodule "deps/UrbanHeatPro"]
+	path = deps/UrbanHeatPro
+	url = https://github.com/VeraKowalczuk/UrbanHeatPro.git
+	branch = master

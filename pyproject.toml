@@ -1,0 +1,41 @@
+[build-system]
+requires = [
+    "setuptools>=64.2",
+    "Cython >= 0.28.5", "numpy >= 1.15.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acept"
+version = "0.0.1"
+authors = [{name = "TUM ENS", email = "vera.kowalczuk@tum.de"}]
+license = {text = "MIT License"}
+description = "Automated, communal energy planning tool"
+dependencies = [
+    "Cartopy>=0.22.0",
+    "geopandas>=0.12.0",
+    "gsee @ git+https://github.com/VeraKowalczuk/gsee.git@master",
+    "netCDF4>=1.6.4",
+    "numpy>=1.26.1",
+    "pandas>=2.1.1",
+    "psutil>=5.9.5",
+    "ratelimit>=2.2.1",
+    "Requests>=2.31.0",
+    "rioxarray>=0.15.0",
+    "Shapely>=2.0.1",
+    "tqdm>=4.66.1",
+    "xarray[io]>=2023.8.0",
+]
+
+[project.optional-dependencies]
+interactive = ["jupyter"]
+docs = ["sphinx", "myst-parser", "sphinx_rtd_theme"]
+all = ["interactive", "docs"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false

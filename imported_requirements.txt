@@ -1,0 +1,15 @@
+Cartopy>=0.22.0
+geopandas>=0.12.0
+gsee @ git+https://github.com/VeraKowalczuk/gsee.git@master
+netCDF4>=1.6.4
+numpy>=1.26.1
+pandas>=2.1.1
+psutil>=5.9.5
+ratelimit>=2.2.1
+Requests>=2.31.0
+rioxarray>=0.15.0
+Shapely>=2.0.1
+tqdm>=4.66.1
+UrbanHeatPro @ git+ssh://git@github.com/VeraKowalczuk/UrbanHeatPro.git@master
+xarray[io]>=2023.8.0
+
