@@ -2,3 +2,7 @@ myst-parser
 sphinx
 sphinx-rtd-theme
 sphinx-autodoc-typehints
+sphinx-autoapi
+sphinx-rtd-size
+sphinx-autobuild
+sphinx-design
