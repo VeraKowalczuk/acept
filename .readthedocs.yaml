@@ -1,9 +1,14 @@
 # .readthedocs.yaml
-# Read the Docs configuration file
+# Read the Docs configuration file for the Sphinx documentation builder for Read the Docs (acept)
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 
 # Required
 version: 2
+
+# add all git submodules to the docs build
+submodules:
+  include: all
+  recursive: true
 
 # Set the OS, Python version and other tools you might need
 build:
