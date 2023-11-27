@@ -32,7 +32,7 @@ For more information on installing UrbanHeatPro, see the ``README.md`` file in t
 Repository folder structure & settings
 --------------------------------------
 
-.. 
+
 
 .. dropdown:: Repository tree
 
