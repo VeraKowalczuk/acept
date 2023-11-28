@@ -3,3 +3,8 @@
 .wy-nav-content {
     max-width: 72% !important;
 }
+
+
+.fa {
+  font-family:inherit
+}
