@@ -12,12 +12,14 @@
    This key can be obtained from https://www.renewables.ninja and has to be set in /src/acept/personal_settings.py.
 
    Set the API key in the following way in /src/acept/personal_settings.py:
-   ```
-   renewables_token = "your_api_key"
-   ```
 
-   :raises FileNotFoundError if the file 'personal_settings.py' is not found.:
-   :raises ValueError if the 'renewables_token' is not set in /src/acept/personal_settings.py:
+   .. code-block:: python
+
+       renewables_token = "your_api_key"
+
+
+   :raises FileNotFoundError: if the file 'personal_settings.py' is not found.
+   :raises ValueError: if the 'renewables_token' is not set in /src/acept/personal_settings.py
 
 
 
@@ -39,6 +41,16 @@ Classes
 
 
    Class containing the arguments for the PV capacity factor API call.
+
+   Constructor for the PVQuery class.
+
+   :param plz: The PLZ of the queried area.
+   :param year: The year of the queried data.
+   :param capacity: The maximum capacity of the PV system in kW.
+   :param system_loss: The system loss of the PV system in %.
+   :param tilt: The tilt of the PV system in degrees.
+   :param azim: The azimuth of the PV system in degrees.
+   :raises ValueError: If the queried year is not between 1980 and 2022.
 
    .. py:method:: to_args_dict()
 

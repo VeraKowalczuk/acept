@@ -6,7 +6,8 @@ Use this module to
     - read the shape file containing the PLZ areas.
     - get the PLZ shape for a given PLZ.
 
-Note: The path to the shape file is defined in :py:const: `accept.config.PLZ_PATH`
+Note:
+    The path to the shape file is defined in :py:const:`accept.config.PLZ_PATH`
 """
 
 import geopandas as gpd
@@ -19,7 +20,7 @@ def read_plz_shapefile(plz_path: str = PLZ_PATH) -> gpd.GeoDataFrame:
     """
     Reads shape file defining the PLZ areas and returns it as a GeoDataFrame.
 
-    :param plz_path: path to the shapefile defining the PLZ areas. Default: :py:const: `accept.config.PLZ_PATH`
+    :param plz_path: path to the shapefile defining the PLZ areas. Default: :py:const:`accept.config.PLZ_PATH`
     :return: GeoDataFrame defining all PLZ areas in EPSG:4326
     """
     gdf = gpd.read_file(plz_path, encoding='utf-8')

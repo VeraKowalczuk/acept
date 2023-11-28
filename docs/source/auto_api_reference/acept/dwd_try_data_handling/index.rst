@@ -14,7 +14,7 @@
        - uncompress DWD TRY data to make file reading faster
        - check if DWD TRY data is available in the correct subdirectory of DWD_TRY_PATH
 
-   :raises ValueOutsideRangeError: if years are outside the allowed range (see :py:const: ``DWD_MAX_RANGE``)
+   :raises ValueOutsideRangeError: if years are outside the allowed range (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
    :raises ValueError: if an unknown DWD feature is requested
 
    Note: To set up the DWD TRY data, use the module :py:mod:`acept.dwd_try_data_setup`
@@ -116,7 +116,8 @@ Attributes
 
    :param year_start: start year of the data set to be combined
    :param year_end: end year of the data set to be combined
-   :raises ValueOutsideRangeError: if year_start or year_end is outside the allowed range (see ``DWD_MAX_RANGE``)
+   :raises ValueOutsideRangeError: if year_start or year_end is outside the allowed range
+       (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
    :param debug: if True, print debug information
    :param uncompressed_years: optional list of years to be combined and saved without compression
 
@@ -129,7 +130,8 @@ Attributes
 
    :param bavaria_shape: shape of Bavaria
    :param year_spec: year of the data set to be combined
-   :raises ValueOutsideRangeError: if year_spec is outside the allowed range (see ``DWD_MAX_RANGE``)
+   :raises ValueOutsideRangeError: if year_spec is outside the allowed range
+       (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
    :param debug: if True, print debug information
    :param uncompressed_years: optional list of years to be combined and saved without compression. Defaults to None.
 
@@ -142,7 +144,8 @@ Attributes
    :param compressed: whether the combined DWD TRY data is available in the correct directory
    :param year_start: start year of the data set to be checked
    :param year_end: end year of the data set to be checked
-   :raises ValueOutsideRangeError: if year_start or year_end is outside the allowed range (see ``DWD_MAX_RANGE``)
+   :raises ValueOutsideRangeError: if year_start or year_end is outside the allowed range
+       (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
    :return: whether the combined DWD TRY data is there
 
 
@@ -154,7 +157,8 @@ Attributes
    :param year: year of the data set to be checked
    :param types_to_check: list of types of data to be checked, allowed values are 'temperature', 'rad_direct',
        'rad_global', 'combined_try', 'combined_try_uncompressed'
-   :raises ValueOutsideRangeError: if year is outside the allowed range (see ``DWD_MAX_RANGE``)
+   :raises ValueOutsideRangeError: if year is outside the allowed range
+       (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
    :return: whether the specified DWD TRY data is there
 
 

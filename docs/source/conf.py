@@ -59,6 +59,7 @@ typehints_use_signature = True
 typehints_use_signature_return = True
 
 # autodoc options
+autodoc_typehints = "both"
 # autodoc/autosummary options
 # autosummary_generate = True  # Turn on sphinx.ext.autosummary
 # autoclass_content = "both"  # Add __init__ doc (ie. params) to class summaries
@@ -72,6 +73,7 @@ autoapi_add_toctree_entry = False
 autoapi_root = 'auto_api_reference'
 autoapi_keep_files = True
 autoapi_template_dir = "_templates/autoapi"
+autoapi_python_class_content = "both"
 
 
 myst_enable_extensions = ["colon_fence"]

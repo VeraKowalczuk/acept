@@ -26,6 +26,46 @@ Classes
 .. py:class:: Building(b, building_stock_stats, dt_vectors, resolution, number_of_typ_days, weights, Tamb, I, _space_heating, _hot_water, _energy_only, Tb0_str, dTset, dT_per_hour, eta, thermal_inertia, _active_population, _workday_weekend, sh_prob, _solar_gains, _internal_gains, _night_set_back, schedule_nsb, T_nsb, power_reduction, Tw, dhw_prob, hw_tank_limit, hw_flow, day_vector, seasonal_vector, min_vector, result_dir, plot, save, debug)
 
 
+   
+   Initialize the Building object with the given parameters.
+
+   :param b: Building dataframe
+   :param building_stock_stats: Building stock statistics
+   :param dt_vectors: Vector of time steps as datetime objects
+   :param resolution: Temporal resolution in min
+   :param number_of_typ_days: Number of typical days
+   :param weights: Weights of typical days
+   :param Tamb: Ambient temperature vector in degC
+   :param I: Solar radiation vector in W/m2 [I_Gh, I_Dh, I_ex, hs]
+   :param _space_heating: Calculate space heating demand?
+   :param _hot_water: Calculate hot water demand?
+   :param _energy_only: Calculate only aggregated demand?
+   :param Tb0_str: Initial building temperature as string: 'ambient' or 'Tset'
+   :param dTset: Delta temperature (for Tset_min, Tset_max)
+   :param dT_per_hour: Maximum dT allowed in building per hour [degC]
+   :param eta: Heating process efficiency
+   :param thermal_inertia: Thermal inertia of the heating system
+   :param _active_population: Consider active population for occupancy vector
+   :param _workday_weekend: Consider dif between workdays and weekends
+   :param sh_prob: Probability vector of using space heating
+   :param _solar_gains: Consider solar gains?
+   :param _internal_gains: Consider internal gains?
+   :param _night_set_back: Share of buildings with nsb
+   :param schedule_nsb: [start, end] of nsb in h
+   :param T_nsb: Night set-back temperature in degC
+   :param power_reduction: Percentage of power reduced (as decimal)
+   :param Tw: Hot water temperature in [degC]
+   :param dhw_prob: Probabilities for dhw-loads
+   :param hw_tank_limit: Hot water tank limit as perc (decimal)
+   :param hw_flow: Flow to refill hot water tank in L/min
+   :param day_vector: Vector of days in simulation time frame
+   :param seasonal_vector: Sinusoidal function for seasonal variations of DHW consumption
+   :param min_vector: Vector of simulation time steps in minutes
+   :param result_dir: Directory where results are stored
+   :param plot: Whether to plot the results or not
+   :param save: Whether to save the results or not
+   :param debug: Whether to print debug information or not
+
    .. py:method:: calculate_space_heating_demand()
 
       Calculates building space heating demand as timeseries [W] and aggregated value [Wh]

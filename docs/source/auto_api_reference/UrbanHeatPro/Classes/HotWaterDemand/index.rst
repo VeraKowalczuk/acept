@@ -26,6 +26,29 @@ Classes
 .. py:class:: HotWaterDemand(dt_vector, resolution, day_vector, seasonal_vector, activity_vector, Tw, daily_DHW, dhw_prob, hw_tank_capacity, hw_tank_limit, hw_tank_volume_t0, hw_flow, result_dir, use, year_class, btype, bid, debug, save_debug)
 
 
+   
+   HotWaterDemand class constructor
+
+   :param dt_vector: Vector with datetime objects
+   :param resolution: Resolution in min
+   :param day_vector: Vector with day of year in simulation time frame
+   :param seasonal_vector: Vector with seasonal variation
+   :param activity_vector: Vector with building activity
+   :param Tw: Supply temperature of water in degC
+   :param daily_DHW: Mean daily hot water consumption [m3]
+   :param dhw_prob: DWH-loads probability
+   :param hw_tank_capacity: Hot water tank capacity in m3
+   :param hw_tank_limit: Hot water tank limit in percentage
+   :param hw_tank_volume_t0: State of hot water tank in m3
+   :param hw_flow: Flow to refill hot water tank in L/min
+   :param result_dir: Result directory
+   :param use: Use of building
+   :param year_class: Year class
+   :param btype: Building type
+   :param bid: Building id
+   :param debug: Level of debug
+   :param save_debug: Whether to save debug files
+
    .. py:method:: calculate()
 
       Calculates time series of domestic hot water demand in m3/min and W for the

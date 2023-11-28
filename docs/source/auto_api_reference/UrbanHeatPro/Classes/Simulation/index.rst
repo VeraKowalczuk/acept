@@ -26,6 +26,22 @@ Classes
 .. py:class:: Simulation(NAME, SIMULATION, CITY, SPACE_HEATING, HOT_WATER, REPORTING)
 
 
+   
+   Initialize the UrbanHeatPro Simulation object.
+
+   :param NAME: The name of the simulation.
+   :type NAME: str
+   :param SIMULATION: A list containing the simulation parameters.
+   :type SIMULATION: list
+   :param CITY: A list containing the city parameters.
+   :type CITY: list
+   :param SPACE_HEATING: A list containing the space heating parameters.
+   :type SPACE_HEATING: list
+   :param HOT_WATER: A list containing the hot water parameters.
+   :type HOT_WATER: list
+   :param REPORTING: A list containing the reporting options.
+   :type REPORTING: list
+
    .. py:method:: run(include_date=True)
 
       Runs a complete simulation of N runs of the city heat demand.

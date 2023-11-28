@@ -25,6 +25,9 @@ Use this module to:
     - Setup TRY data for ACEPT by combining the data for the features for Bavaria for a single year
 
 To download and setup TRY data for a single year <year>, use:
+
+.. code-block:: python
+
     setup_dwd_try_data_for_single_year(<year>)
 
 Or run the following command in a terminal, where <year> is the year to download and setup:
@@ -45,7 +48,8 @@ If <year> is not given, the year 2011 is used.
 For more information about the TRY data, see:
     https://www.dwd.de/DE/leistungen/cdc/cdc_ueberblick-klimadaten.html
 
-Note: Using leap years, e.g. 2012, is not recommended as they have a different number of days than non-leap years.
+Note:
+    Using leap years, e.g. 2012, is not recommended as they have a different number of days than non-leap years.
 """
 
 import os

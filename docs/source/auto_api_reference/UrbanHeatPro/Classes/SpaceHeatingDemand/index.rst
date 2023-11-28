@@ -26,6 +26,36 @@ Classes
 .. py:class:: SpaceHeatingDemand(dt_vector, resolution, heated_area, Tamb, I, Tb0, dT_per_hour, eta, thermal_intertia, U, V, C, Tset, dTset, activity_vector, occupancy_vector, sh_prob, _solar_gains, _internal_gains, _night_set_back, schedule_nsb, T_nsb, power_reduction, window_areas, coords, debug)
 
 
+   
+   Initializes an instance of the SpaceHeatingDemand class.
+
+   :param dt_vector: List of time steps as datetime objects.
+   :param resolution: Resolution in minutes.
+   :param heated_area: Heated area in square meters.
+   :param Tamb: Ambient temperature vector in degrees Celsius.
+   :param I: Solar radiation vector in W/m2.
+   :param Tb0: Initial building temperature in degrees Celsius.
+   :param dT_per_hour: Maximum change in temperature allowed per hour in degrees Celsius.
+   :param eta: Heating process efficiency.
+   :param thermal_intertia: Thermal inertia of the heating system.
+   :param U: Building transmission losses in W/K.
+   :param V: Building ventilation losses in W/K.
+   :param C: Equivalent building thermal mass in J/K.
+   :param Tset: Set temperature or target temperature in degrees Celsius.
+   :param dTset: Delta temperature for Tset_min and Tset_max.
+   :param activity_vector: Building activity vector (0, 1).
+   :param occupancy_vector: Number of occupants in the building in each time step.
+   :param sh_prob: Probability vector of using space heating.
+   :param _solar_gains: Solar gains in W/m2.
+   :param _internal_gains: Internal gains in W/m2.
+   :param _night_set_back: Share of buildings with night set-back.
+   :param schedule_nsb: Start and end of night set-back in hours.
+   :param T_nsb: Night set-back temperature in degrees Celsius.
+   :param power_reduction: Percentage of power reduced (as decimal).
+   :param window_areas: Window area oriented to [E, S, W, N] in square meters.
+   :param coords: (latitude, longitude) of the building centroid.
+   :param debug: Debug flag.
+
    .. py:method:: calculate()
 
       Calculates the time series of space heating demand for a single building

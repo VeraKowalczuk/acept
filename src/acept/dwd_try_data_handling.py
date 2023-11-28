@@ -3,15 +3,16 @@
 Use this module to:
     - read DWD TRY data as a Xarray Dataset
     - preprocess DWD TRY data
-    - combine multiple DWD TRY datasets (temperature, direct radiation, and global radiation) into a single Xarray Dataset for use in ACEPT
+    - combine multiple DWD TRY datasets (temperature, direct radiation, and global radiation) into a single Xarray Dataset for use in acept
     - uncompress DWD TRY data to make file reading faster
-    - check if DWD TRY data is available in the correct subdirectory of DWD_TRY_PATH
+    - check if DWD TRY data is available in the correct subdirectory of :py:const:`acept.acept_constants.DWD_TRY_PATH`
 
 Raises:
-    ValueOutsideRangeError: if years are outside the allowed range (see :py:const: ``DWD_MAX_RANGE``)
+    ValueOutsideRangeError: if years are outside the allowed range (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
     ValueError: if an unknown DWD feature is requested
 
-Note: To set up the DWD TRY data, use the module :py:mod:`acept.dwd_try_data_setup`
+Note:
+    To set up the DWD TRY data, use the module :py:mod:`acept.dwd_try_data_setup`
 
 """
 
@@ -36,6 +37,7 @@ DWD_MIN_YEAR = 1995
 DWD_MAX_YEAR = 2012
 """Maximum year of DWD TRY data."""
 DWD_MAX_RANGE = range(DWD_MIN_YEAR, DWD_MAX_YEAR + 1)
+"""Maximum range of years of DWD TRY data available to download as a python range object: 1995-2012."""
 
 
 def read_dwd_netcdf_file(dwd_feature: str, year, month, debug: bool = True) -> xr.Dataset:
@@ -165,7 +167,8 @@ def combine_dwd_try_data_and_save(year_start: int = DWD_MIN_YEAR, year_end: int 
 
     :param year_start: start year of the data set to be combined
     :param year_end: end year of the data set to be combined
-    :raises ValueOutsideRangeError: if year_start or year_end is outside the allowed range (see ``DWD_MAX_RANGE``)
+    :raises ValueOutsideRangeError: if year_start or year_end is outside the allowed range
+        (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
     :param debug: if True, print debug information
     :param uncompressed_years: optional list of years to be combined and saved without compression
     """
@@ -194,7 +197,8 @@ def combine_dwd_try_data_and_save_single_year(bavaria_shape: gpd.GeoDataFrame, y
 
     :param bavaria_shape: shape of Bavaria
     :param year_spec: year of the data set to be combined
-    :raises ValueOutsideRangeError: if year_spec is outside the allowed range (see ``DWD_MAX_RANGE``)
+    :raises ValueOutsideRangeError: if year_spec is outside the allowed range
+        (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
     :param debug: if True, print debug information
     :param uncompressed_years: optional list of years to be combined and saved without compression. Defaults to None.
     """
@@ -287,7 +291,8 @@ def check_for_un_compressed_dwd_try_data(compressed=True, year_start: int = DWD_
     :param compressed: whether the combined DWD TRY data is available in the correct directory
     :param year_start: start year of the data set to be checked
     :param year_end: end year of the data set to be checked
-    :raises ValueOutsideRangeError: if year_start or year_end is outside the allowed range (see ``DWD_MAX_RANGE``)
+    :raises ValueOutsideRangeError: if year_start or year_end is outside the allowed range
+        (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
     :return: whether the combined DWD TRY data is there
     """
     if year_start > year_end or year_start < DWD_MIN_YEAR or year_end > DWD_MAX_YEAR:
@@ -312,7 +317,8 @@ def check_for_dwd_try_data_year(year: int,
     :param year: year of the data set to be checked
     :param types_to_check: list of types of data to be checked, allowed values are 'temperature', 'rad_direct',
         'rad_global', 'combined_try', 'combined_try_uncompressed'
-    :raises ValueOutsideRangeError: if year is outside the allowed range (see ``DWD_MAX_RANGE``)
+    :raises ValueOutsideRangeError: if year is outside the allowed range
+        (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
     :return: whether the specified DWD TRY data is there
     """
     if year not in range(DWD_MIN_YEAR, DWD_MAX_YEAR + 1):

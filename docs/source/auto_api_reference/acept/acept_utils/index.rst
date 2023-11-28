@@ -34,6 +34,9 @@ Functions
 
    Climb directory path upwards
 
+   :param filepath: Path to a file or directory
+   :param n: Number of path levels to climb upwards
+   :return: Path to the directory n levels upwards
    .. rubric:: Example
 
    >>> uppath("/parent/temp/dir/file.txt", 1)

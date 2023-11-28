@@ -8,8 +8,9 @@ Use this module to:
     - query the BBD for the GeoDataFrame containing all buildings with the selected post code (PLZ)
     - save the BBD query result to a shape file in the /temp directory :py:const:`acept.acept_constants.TEMP_PATH`
 
-Note: The BBD shapefiles are read from the :py:const:`acept.acept_constants.BBD_ROOT_DIR` directory. The modified BBD
-shapefiles are saved in the :py:const:`acept.acept_constants.BBD_WITH_PLZ_ROOT_PATH` directory.
+Note:
+    The BBD shapefiles are read from the :py:const:`acept.acept_constants.BBD_ROOT_DIR` directory. The modified BBD
+    shapefiles are saved in the :py:const:`acept.acept_constants.BBD_WITH_PLZ_ROOT_PATH` directory.
 """
 
 import glob

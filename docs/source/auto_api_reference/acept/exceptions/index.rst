@@ -19,4 +19,10 @@ Module Contents
 
    Exception raised when a value is outside the allowed range.
 
+   Initialize the exception, that will be raised when a value is outside the allowed range.
+
+   :param min_value: minimum allowed value
+   :param max_value: maximum allowed value
+   :param data_type: name of the data type that is checked
+
 

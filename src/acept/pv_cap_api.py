@@ -5,13 +5,15 @@ Note: The API is rate limited to 50 calls per hour and needs an API key.
 This key can be obtained from https://www.renewables.ninja and has to be set in /src/acept/personal_settings.py.
 
 Set the API key in the following way in /src/acept/personal_settings.py:
-```
-renewables_token = "your_api_key"
-```
+
+.. code-block:: python
+
+    renewables_token = "your_api_key"
+
 
 Raises:
-    FileNotFoundError if the file 'personal_settings.py' is not found.
-    ValueError if the 'renewables_token' is not set in /src/acept/personal_settings.py
+    FileNotFoundError: if the file 'personal_settings.py' is not found.
+    ValueError: if the 'renewables_token' is not set in /src/acept/personal_settings.py
 
 """
 
@@ -53,6 +55,7 @@ class PVQuery:
                  tilt: float = 35, azim: float = 180):
         """
         Constructor for the PVQuery class.
+
         :param plz: The PLZ of the queried area.
         :param year: The year of the queried data.
         :param capacity: The maximum capacity of the PV system in kW.

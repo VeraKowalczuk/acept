@@ -327,6 +327,21 @@ Classes
 
       :type: int
 
+   Initializes the City object.
+
+   :param NAME: Name of the simulation.
+   :type NAME: str
+   :param SIMULATION: List containing the parameters related to the simulation.
+   :type SIMULATION: list
+   :param CITY: List containing the parameters related to the city.
+   :type CITY: list
+   :param SPACE_HEATING: List containing the parameters related to space heating demand.
+   :type SPACE_HEATING: list
+   :param HOT_WATER: List containing the parameters related to hot water demand.
+   :type HOT_WATER: list
+   :param REPORTING: List containing the parameters related to reporting.
+   :type REPORTING: list
+
    .. py:method:: create_synthetic_city()
 
       Create a synthetic city representing the building stock based on statistics.
