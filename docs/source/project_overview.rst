@@ -44,7 +44,7 @@ Chair of Renewable and Sustainable Energy Systems at the Technical University of
 Features of acept
 -----------------
 
-Since the available data on buildings is does not necessarily contain all needed information on the building, 
+Since the available data on buildings does not necessarily contain all needed information on the building,
 ``acept`` can be used to complement the existing data on buildings with additional knowledge.
 
 There are a number of timeseries data sets that are needed as a input for ``urbs``.
@@ -62,7 +62,7 @@ characteristic for a research area or equipment, we call them "profiles" for sho
 
 To calculate the heat demand profiles, ``acept`` leverages an upgraded version of the existing 
 tool ``UrbanHeatPro``. For more information on this tool, please refer to the 
-section :doc:`uhp`, the :doc:`auto_api_reference/UrbanHeatPro/index`, or find the project on :fab:`github`
+section :doc:`uhp`, the :doc:`auto_api_reference/UrbanHeatPro/index` API documentation, or find the project on :fab:`github`
 `Github <https://github.com/VeraKowalczuk/UrbanHeatPro>`_.
 
 
