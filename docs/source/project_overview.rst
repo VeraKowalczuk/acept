@@ -31,7 +31,7 @@ to determine optimal transition pathways for meeting the energy demands of the d
 thereby assisting decision-making processes.
 
 .. seealso::
-    - ``urbs``: Please refer to the `urbs documentation <https://urbs.readthedocs.io>`_, or find the project on :fab:`github` `Github <https://github.com/tum-ens/urbs>`_
+    - ``urbs``: Please refer to the `urbs documentation <https://urbs.readthedocs.io>`_, or find the project on :octicon:`mark-github;1em;fa fa-github` `Github <https://github.com/tum-ens/urbs>`_
     - ``pylovo``: Please refer to the `pylovo documentation <https://pylovo.readthedocs.io>`_, or find the project on `Gitlab LRZ <https://pylovo.readthedocs.io/en/latest/>`_
 
 
@@ -62,7 +62,7 @@ characteristic for a research area or equipment, we call them "profiles" for sho
 
 To calculate the heat demand profiles, ``acept`` leverages an upgraded version of the existing 
 tool ``UrbanHeatPro``. For more information on this tool, please refer to the 
-section :doc:`uhp`, the :doc:`auto_api_reference/UrbanHeatPro/index` API documentation, or find the project on :fab:`github`
+section :doc:`uhp`, the :doc:`auto_api_reference/UrbanHeatPro/index` API documentation, or find the project on :octicon:`mark-github;1em;fa fa-github`
 `Github <https://github.com/VeraKowalczuk/UrbanHeatPro>`_.
 
 

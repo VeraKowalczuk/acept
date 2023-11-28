@@ -13,7 +13,7 @@ The tool takes into account factors such as building characteristics, regional d
 sources to help users to generate energy planning scenarios and evaluate their impact on sustainability and 
 cost-effectiveness.
 
-Welcome to the documentation for the ACEPT project. Check out the project on :fab:`github` `Github <https://github.com/VeraKowalczuk/acept>`_.
+Welcome to the documentation for the ACEPT project. Check out the project on :octicon:`mark-github;1em;fa fa-github` `Github <https://github.com/VeraKowalczuk/acept>`_.
 
 .. toctree::
    :maxdepth: 2

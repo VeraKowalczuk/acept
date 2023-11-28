@@ -8,6 +8,9 @@ The UrbanHeatPro dependency
 
 Installation
 ------------
+While UrbanHeatPro is a dependency of ``acept``, it is not installed as a normal dependency.
+Instead it is included as a git submodule in the ``acept`` project and should be to be installed as an
+editable package.
 
 If the dependency is not yet installed, install UrbanHeatPro as an editable package for this project by running:
 
@@ -26,7 +29,7 @@ To fetch updates from the remote repository, run:
 For more information on installing UrbanHeatPro, see the ``README.md`` file in the ``deps/UrbanHeatPro`` folder.
 
 .. seealso::
-      :fab:`github` Repository: https://github.com/VeraKowalczuk/UrbanHeatPro
+      :octicon:`mark-github;1em;fa fa-github` Repository: https://github.com/VeraKowalczuk/UrbanHeatPro
 
 
 Repository folder structure & settings
@@ -56,9 +59,9 @@ Version used in ACEPT
 ---------------------
 
 .. note::
-      As the original UrbanHeatPro project is not actively maintained, ACEPT uses a fork of the project.
+      As the original UrbanHeatPro project is not actively maintained, ACEPT uses a :octicon:`repo-forked;1em;fa fa-github` fork of the project.
 
-      The fork includes:
+      The :octicon:`repo-forked;1em;fa fa-github` fork includes:
         * bug fixes
         * support for configuration files
         * updated dependencies
@@ -66,5 +69,5 @@ Version used in ACEPT
         * ...
 
 .. seealso::
-      *  :fab:`github` Fork: https://github.com/VeraKowalczuk/UrbanHeatPro
-      *  :fab:`github` original UrbanHeatPro project: https://github.com/tum-ens/UrbanHeatPro
+      *  :octicon:`mark-github;1em;fa fa-github` :octicon:`repo-forked;1em;fa fa-github` Fork: https://github.com/VeraKowalczuk/UrbanHeatPro
+      *  :octicon:`mark-github;1em;fa fa-github` original UrbanHeatPro project: https://github.com/tum-ens/UrbanHeatPro
