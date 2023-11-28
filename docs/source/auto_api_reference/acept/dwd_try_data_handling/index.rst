@@ -10,14 +10,14 @@
    Use this module to:
        - read DWD TRY data as a Xarray Dataset
        - preprocess DWD TRY data
-       - combine multiple DWD TRY datasets (temperature, direct radiation, and global radiation) into a single Xarray Dataset for use in ACEPT
+       - combine multiple DWD TRY datasets (temperature, direct radiation, and global radiation) into a single Xarray Dataset for use in acept
        - uncompress DWD TRY data to make file reading faster
-       - check if DWD TRY data is available in the correct subdirectory of DWD_TRY_PATH
+       - check if DWD TRY data is available in the correct subdirectory of :py:const:`acept.acept_constants.DWD_TRY_PATH`
 
    :raises ValueOutsideRangeError: if years are outside the allowed range (see :py:const:`acept.dwd_try_data_handling.DWD_MAX_RANGE`)
    :raises ValueError: if an unknown DWD feature is requested
 
-   Note: To set up the DWD TRY data, use the module :py:mod:`acept.dwd_try_data_setup`
+   .. note:: To set up the DWD TRY data, use the module :py:mod:`acept.dwd_try_data_setup`
 
 
 
@@ -63,7 +63,9 @@ Attributes
 
 .. py:data:: DWD_MAX_RANGE
 
-   
+   1995-2012.
+
+   :type: Maximum range of years of DWD TRY data available to download as a python range object
 
 .. py:function:: read_dwd_netcdf_file(dwd_feature: str, year, month, debug: bool = True) -> xarray.Dataset
 

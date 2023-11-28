@@ -26,6 +26,10 @@ def absolute_path_from_relative_posix(posix_relative_to_src_files: str) -> str:
     """
     Returns the absolute path to the given relative POSIX path to a file or directory (relative to `/src/acept`)
 
+    Example:
+        >>> absolute_path_from_relative_posix("../../data/plz/plz-5stellig.shp")
+        'path/to/the/acept/repository/data/plz/plz-5stellig.shp'
+
     :param posix_relative_to_src_files: Path to a file or directory, given as a POSIX path, relative to `/src/acept`.
     :return: Absolute path to the given path relative_to_src_files
     """

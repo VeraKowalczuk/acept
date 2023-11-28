@@ -158,7 +158,7 @@ def build_plz_munc_id_db(debug: bool = True):
 
     plz_to_munc = {}  # {plz mapping to list of munc_ids} # maybe also the other way around
 
-    for shapefile_path in glob.iglob(BBD_ROOT_DIR + '**' + os.sep + '*.shp', recursive=True):
+    for shapefile_path in glob.iglob(os.path.join(BBD_ROOT_DIR, '**', '*.shp'), recursive=True):
         if shapefile_path.endswith("_mod.shp"):
             continue
         shapefile_name = os.path.basename(shapefile_path)[:-4]
