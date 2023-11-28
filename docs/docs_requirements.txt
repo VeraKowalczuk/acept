@@ -1,8 +1,7 @@
-myst-parser
-sphinx
-sphinx-rtd-theme
-sphinx-autodoc-typehints
-sphinx-autoapi
-sphinx-rtd-size
-sphinx-autobuild
-sphinx-design
+sphinx==7.2.6
+myst-parser==2.0.0
+sphinx-rtd-theme==2.0.0
+sphinx-autodoc-typehints==1.25.2
+sphinx-autoapi==3.0.0
+sphinx-autobuild==2021.3.14
+sphinx-design==0.5.0
