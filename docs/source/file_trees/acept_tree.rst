@@ -5,6 +5,14 @@
 
     📦acept
     ┣ 📂data
+    ┃ ┣ 📂bbd
+    ┃ ┃ ┗ 📂TestBezirk
+    ┃ ┃ ┃ ┣ 📜Res_9565000_10_buildings.cpg
+    ┃ ┃ ┃ ┣ 📜Res_9565000_10_buildings.csv
+    ┃ ┃ ┃ ┣ 📜Res_9565000_10_buildings.dbf
+    ┃ ┃ ┃ ┣ 📜Res_9565000_10_buildings.prj
+    ┃ ┃ ┃ ┣ 📜Res_9565000_10_buildings.shp
+    ┃ ┃ ┃ ┗ 📜Res_9565000_10_buildings.shx
     ┃ ┣ 📂dwd
     ┃ ┃ ┗ 📂try_bavarian
     ┃ ┃ ┃ ┣ 📜TRY_201201.nc
@@ -123,23 +131,34 @@
     ┣ 📂docs
     ┃ ┣ 📂build
     ┃ ┣ 📂source
-    ┃ ┃ ┣ 📂_autosummary
     ┃ ┃ ┣ 📂_static
-    ┃ ┃ ┃ ┗ 📜custom.css
+    ┃ ┃ ┃ ┣ 📜custom.css
+    ┃ ┃ ┃ ┗ 📜theme.css
     ┃ ┃ ┣ 📂_templates
-    ┃ ┃ ┃ ┣ 📜custom-class-template.rst
-    ┃ ┃ ┃ ┗ 📜custom-module-template.rst
+    ┃ ┃ ┃ ┗ 📂autoapi
+    ┃ ┃ ┃ ┃ ┗ 📜index.rst
+    ┃ ┃ ┣ 📂auto_api_reference
+    ┃ ┃ ┃ ┣ 📂UrbanHeatPro
+    ┃ ┃ ┃ ┣ 📂acept
+    ┃ ┃ ┃ ┗ 📜index.rst
     ┃ ┃ ┣ 📂file_trees
     ┃ ┃ ┃ ┣ 📜acept_tree.rst
     ┃ ┃ ┃ ┗ 📜uhp_tree.rst
-    ┃ ┃ ┣ 📜acept.examples.rst
-    ┃ ┃ ┣ 📜acept.rst
-    ┃ ┃ ┣ 📜api.rst
+    ┃ ┃ ┣ 📂images
+    ┃ ┃ ┃ ┣ 📜demand_generated.png
+    ┃ ┃ ┃ ┣ 📜demand_new_ui.png
+    ┃ ┃ ┃ ┣ 📜supim_generated.png
+    ┃ ┃ ┃ ┣ 📜supim_new_ui.png
+    ┃ ┃ ┃ ┣ 📜tve_generated.png
+    ┃ ┃ ┃ ┗ 📜tve_new_ui.png
     ┃ ┃ ┣ 📜conf.py
+    ┃ ┃ ┣ 📜contribute.rst
+    ┃ ┃ ┣ 📜data_setup.rst
+    ┃ ┃ ┣ 📜development_future_work.rst
     ┃ ┃ ┣ 📜index.rst
     ┃ ┃ ┣ 📜installation.rst
-    ┃ ┃ ┣ 📜modules.rst
-    ┃ ┃ ┣ 📜project-setup.md
+    ┃ ┃ ┣ 📜project_overview.rst
+    ┃ ┃ ┣ 📜pylovo_gui.rst
     ┃ ┃ ┣ 📜uhp.rst
     ┃ ┃ ┗ 📜usage.rst
     ┃ ┣ 📜Makefile
@@ -152,11 +171,12 @@
     ┃ ┗ 📂acept
     ┃ ┃ ┣ 📂acept_notebooks
     ┃ ┃ ┃ ┣ 📜bbd_plz_processsing_examples.ipynb
-    ┃ ┃ ┃ ┣ 📜dwd_try_data.ipynb
-    ┃ ┃ ┃ ┣ 📜idp_test_stuff.ipynb
-    ┃ ┃ ┃ ┣ 📜input_data_analytics.ipynb
+    ┃ ┃ ┃ ┣ 📜building_information_example.ipynb
+    ┃ ┃ ┃ ┣ 📜buildings_shapes_analytics.ipynb
+    ┃ ┃ ┃ ┣ 📜demand_profiles_example.ipynb
+    ┃ ┃ ┃ ┣ 📜dwd_try_data_performance_analytics.ipynb
     ┃ ┃ ┃ ┣ 📜plz_shape_data_analytics.ipynb
-    ┃ ┃ ┃ ┗ 📜temp_profiles.ipynb
+    ┃ ┃ ┃ ┗ 📜weather_profile_examples.ipynb
     ┃ ┃ ┣ 📂examples
     ┃ ┃ ┃ ┣ 📜__init__.py
     ┃ ┃ ┃ ┣ 📜main_example.py
@@ -180,11 +200,9 @@
     ┃ ┃ ┣ 📜uhp_input_formatting.py
     ┃ ┃ ┗ 📜weather_profile_api.py
     ┣ 📂temp
-    ┃ ┗ 📂PLZ_123459_20_1_0_1781549793
-    ┃ ┃ ┣ 📜DWD_TRY_123459_20_1_0_1781549793_2012.csv
-    ┃ ┃ ┗ 📜temperature_tmy_123459_20_1_0_1781549793.csv
     ┣ 📜.gitignore
     ┣ 📜.gitmodules
+    ┣ 📜.readthedocs.yaml
     ┣ 📜LICENSE
     ┣ 📜README.md
     ┣ 📜imported_requirements.txt
@@ -202,6 +220,8 @@
 
     📦acept 
     ┣ 📂data                                    Data directory
+    ┃ ┣ 📂bbd                                   Root directory for the preprocessed BBD
+    ┃ ┃ ┗ 📂TestBezirk                          Contains example shapefiles for testing
     ┃ ┣ 📂dwd                                   Weather data from the Deutscher Wetterdienst (DWD)
     ┃ ┃ ┗ 📂try_bavarian                        Bavarian TRY data
     ┃ ┣ 📂fed_states                            Shape files for the federal states of Germany
@@ -214,18 +234,19 @@
     ┣ 📂docs                                    Documentation
     ┃ ┣ 📂build
     ┃ ┣ 📂source                                Source files for the documentation
-    ┃ ┃ ┣ 📂_autosummary
     ┃ ┃ ┣ 📂_static                             Static files and style sheets
     ┃ ┃ ┣ 📂_templates                          HTML templates
+    ┃ ┃ ┣ 📂auto_api_reference                  API reference for the packages in the project
     ┃ ┃ ┣ 📂file_trees                          File trees
-    ┃ ┃ ┣ 📜acept.examples.rst
-    ┃ ┃ ┣ 📜acept.rst
-    ┃ ┃ ┣ 📜api.rst
-    ┃ ┃ ┣ 📜conf.py
+    ┃ ┃ ┣ 📂images                              Images for the documentation
+    ┃ ┃ ┣ 📜conf.py                             Sphinx configuration
+    ┃ ┃ ┣ 📜contribute.rst                      
+    ┃ ┃ ┣ 📜data_setup.rst
+    ┃ ┃ ┣ 📜development_future_work.rst
     ┃ ┃ ┣ 📜index.rst
     ┃ ┃ ┣ 📜installation.rst
-    ┃ ┃ ┣ 📜modules.rst
-    ┃ ┃ ┣ 📜project-setup.rst
+    ┃ ┃ ┣ 📜project_overview.rst
+    ┃ ┃ ┣ 📜pylovo_gui.rst
     ┃ ┃ ┣ 📜uhp.rst
     ┃ ┃ ┗ 📜usage.rst
     ┃ ┣ 📜Makefile
@@ -236,13 +257,14 @@
     ┃ ┗ 📜uhp_settings_example.yaml             Example settings file for UrbanHeatPro
     ┣ 📂src
     ┃ ┗ 📂acept
-    ┃ ┃ ┣ 📂acept_notebooks                     Jupyther notebooks for using acept
+    ┃ ┃ ┣ 📂acept_notebooks                     Jupyther notebooks for using acept (examples)
     ┃ ┃ ┃ ┣ 📜bbd_plz_processsing_examples.ipynb
-    ┃ ┃ ┃ ┣ 📜dwd_try_data.ipynb
-    ┃ ┃ ┃ ┣ 📜idp_test_stuff.ipynb
-    ┃ ┃ ┃ ┣ 📜input_data_analytics.ipynb
+    ┃ ┃ ┃ ┣ 📜building_information_example.ipynb
+    ┃ ┃ ┃ ┣ 📜buildings_shapes_analytics.ipynb
+    ┃ ┃ ┃ ┣ 📜demand_profiles_example.ipynb
+    ┃ ┃ ┃ ┣ 📜dwd_try_data_performance_analytics.ipynb
     ┃ ┃ ┃ ┣ 📜plz_shape_data_analytics.ipynb
-    ┃ ┃ ┃ ┗ 📜temp_profiles.ipynb
+    ┃ ┃ ┃ ┗ 📜weather_profile_examples.ipynb
     ┃ ┃ ┣ 📂examples                            Examples of using acept
     ┃ ┃ ┃ ┣ 📜__init__.py
     ┃ ┃ ┃ ┣ 📜main_example.py
@@ -268,6 +290,7 @@
     ┣ 📂temp                                    Directory temporary files are saved in
     ┣ 📜.gitignore                              A file that specifies which files and directories should be ignored by Git
     ┣ 📜.gitmodules                             A file specifying the submodule dependencies required by the project
+    ┣ 📜.readthedocs.yaml                       Configuration for readthedocs
     ┣ 📜LICENSE                                 The license file for the project
     ┣ 📜README.md                               The readme file for the project
     ┣ 📜imported_requirements.txt
