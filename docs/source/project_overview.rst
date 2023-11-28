@@ -31,14 +31,15 @@ to determine optimal transition pathways for meeting the energy demands of the d
 thereby assisting decision-making processes.
 
 .. seealso::
-    - ``urbs``: Please refer to the `urbs documentation <https://urbs.readthedocs.io>`_, or find the project on :octicon:`mark-github;1em;fa fa-github` `Github <https://github.com/tum-ens/urbs>`_
+    - ``urbs``: Please refer to the `urbs documentation <https://urbs.readthedocs.io>`_, or find the project on :octicon:`mark-github;1em;fa fa-github` `GitHub <https://github.com/tum-ens/urbs>`_
     - ``pylovo``: Please refer to the `pylovo documentation <https://pylovo.readthedocs.io>`_, or find the project on `Gitlab LRZ <https://pylovo.readthedocs.io/en/latest/>`_
 
 
 The aim of the ACEPT project is to automate the process of sourcing input data for ``urbs``.
-Additionally, it was integrated into the GUI of ``pylovo``, that allows a user to quickly visualize different grids and set parameters as well as results of the optimization of said grids
+Additionally, it was integrated into the GUI of ``pylovo``, that allows a user to quickly visualize different grids and
+set parameters as well as results of the optimization of said grids.
 
-The ACEPT project is part of a Interdisciplinary Project (IDP) at the 
+The ACEPT project is part of an Interdisciplinary Project (IDP) at the
 Chair of Renewable and Sustainable Energy Systems at the Technical University of Munich (TUM).
 
 Features of acept
@@ -47,7 +48,7 @@ Features of acept
 Since the available data on buildings does not necessarily contain all needed information on the building,
 ``acept`` can be used to complement the existing data on buildings with additional knowledge.
 
-There are a number of timeseries data sets that are needed as a input for ``urbs``.
+There are a number of timeseries data sets that are needed as an input for ``urbs``.
 These timeseries contain hourly data for one year. Since these timeseries are a describe a 
 characteristic for a research area or equipment, we call them "profiles" for short.
 
@@ -55,7 +56,7 @@ characteristic for a research area or equipment, we call them "profiles" for sho
 
 * the typical weather for a location or area,
 * the ambient temperature for a location or area,
-* heat demand profiles for all buildings in a specified area and the the area as a whole,
+* heat demand profiles for all buildings in a specified area and the area as a whole,
 * solar profiles, that give the PV capacity factor for all buildings in a specified area,
 * the Coefficient of Performance (COP) for heat pumps,
 * ...
@@ -63,7 +64,7 @@ characteristic for a research area or equipment, we call them "profiles" for sho
 To calculate the heat demand profiles, ``acept`` leverages an upgraded version of the existing 
 tool ``UrbanHeatPro``. For more information on this tool, please refer to the 
 section :doc:`uhp`, the :doc:`auto_api_reference/UrbanHeatPro/index` API documentation, or find the project on :octicon:`mark-github;1em;fa fa-github`
-`Github <https://github.com/VeraKowalczuk/UrbanHeatPro>`_.
+`GitHub <https://github.com/VeraKowalczuk/UrbanHeatPro>`_.
 
 
 Repository structure

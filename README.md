@@ -3,7 +3,7 @@ ACEPT - Automated, communal energy planning tool
 
 ACEPT is an open-source project that aims to provide an automated, communal energy planning tool. It allows users to model and analyze energy demand, supply, and distribution in a community or urban area. The tool takes into account factors such as building characteristics, regional data, and renewable energy sources to generate energy planning scenarios and evaluate their impact on sustainability and cost-effectiveness.
 
->  This is a Interdisciplinary Project (IDP) at the Chair of Renewable and Sustainable Energy Systems at TUM
+>  This is an Interdisciplinary Project (IDP) at the Chair of Renewable and Sustainable Energy Systems at TUM
 
 <a href='https://acept.readthedocs.io/en/latest/?badge=latest'>
     <img src='https://readthedocs.org/projects/acept/badge/?version=latest' alt='Documentation Status' />
@@ -14,8 +14,31 @@ For a detailed documentation of the project, please refer to the [**Documentatio
 
 ## Features
 
+The ACEPT project aims to automate the process of sourcing input data for the linear optimization framework ``urbs``.
+Additionally, it was integrated into the GUI of ``pylovo``, that allows a user to quickly visualize different grids and 
+set parameters as well as results of the optimization of said grids.
 
+``acept`` provides support to create timeseries profiles as an input for ``urbs`` for...
 
+* the typical weather for a location or area,
+* the ambient temperature for a location or area,
+* heat demand profiles for all buildings in a specified area and the area as a whole,
+* solar profiles, that give the PV capacity factor for all buildings in a specified area,
+* the Coefficient of Performance (COP) for heat pumps,
+* ...
+
+These timeseries contain hourly data for one year.
+
+To calculate the heat demand profiles, ``acept`` leverages an upgraded version of the existing 
+tool ``UrbanHeatPro``. 
+
+Additionally, ``acept`` complements the existing data on buildings with additional knowledge because the available
+information on buildings is often incomplete, e.g. the postal code a building is in or its size.
+
+Further information on the other projects that ``acept`` interacts with:
+ - ``urbs``: Please refer to the [urbs documentation](https://urbs.readthedocs.io), or find the project on [GitHub](https://github.com/tum-ens/urbs).
+ - ``pylovo``: Please refer to the [pylovo documentation](https://pylovo.readthedocs.io), or find the project on [Gitlab LRZ](https://pylovo.readthedocs.io/en/latest/).
+ - ``UrbanHeatPro``: Check out the section on [the UrbanHeatPro dependency](https://acept.readthedocs.io/en/latest/uhp.html) in the documentation of ``acept``.
 
 ## Requirements
 

@@ -9,7 +9,7 @@ Python 3.10
 Repository
 ----------
 
-To clone the repository from Github to a directory, run the following command:
+To clone the repository from GitHub to a directory, run the following command:
 
 .. code-block:: console
 
