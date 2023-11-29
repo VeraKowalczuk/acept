@@ -101,10 +101,10 @@ PLZ_PATH = absolute_path_from_relative_posix("../../data/plz/plz-5stellig.shp")
 Path relative to the acept repository root directory: ``data/plz/plz-5stellig.shp``
 """
 
-FED_STATES_PATH = absolute_path_from_relative_posix("../../data/fed_states/vg2500_bld.shp")
+FED_STATES_PATH = absolute_path_from_relative_posix("../../data/fed_states/federal_states_borders_germany.shp")
 """Path to the federal states shape file.
 
-Path relative to the acept repository root directory: ``data/fed_states/vg2500_bld.shp``
+Path relative to the acept repository root directory: ``data/fed_states/federal_states_borders_germany.shp``
 """
 
 TEMP_PATH = absolute_path_from_relative_posix("../../temp/")

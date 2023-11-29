@@ -15,23 +15,11 @@
     ┃ ┃ ┃ ┗ 📜Res_9565000_10_buildings.shx
     ┃ ┣ 📂dwd
     ┃ ┃ ┗ 📂try_bavarian
-    ┃ ┃ ┃ ┣ 📜TRY_201201.nc
-    ┃ ┃ ┃ ┣ 📜TRY_201202.nc
-    ┃ ┃ ┃ ┣ 📜TRY_201203.nc
-    ┃ ┃ ┃ ┣ 📜TRY_201204.nc
-    ┃ ┃ ┃ ┣ 📜TRY_201205.nc
-    ┃ ┃ ┃ ┣ 📜TRY_201206.nc
-    ┃ ┃ ┃ ┣ 📜TRY_201207.nc
-    ┃ ┃ ┃ ┣ 📜TRY_201208.nc
-    ┃ ┃ ┃ ┣ 📜TRY_201209.nc
-    ┃ ┃ ┃ ┣ 📜TRY_201210.nc
-    ┃ ┃ ┃ ┣ 📜TRY_201211.nc
-    ┃ ┃ ┃ ┗ 📜TRY_201212.nc
     ┃ ┣ 📂fed_states
-    ┃ ┃ ┣ 📜vg2500_bld.dbf
-    ┃ ┃ ┣ 📜vg2500_bld.prj
-    ┃ ┃ ┣ 📜vg2500_bld.shp
-    ┃ ┃ ┗ 📜vg2500_bld.shx
+    ┃ ┃ ┣ 📜federal_states_borders_germany.dbf
+    ┃ ┃ ┣ 📜federal_states_borders_germany.prj
+    ┃ ┃ ┣ 📜federal_states_borders_germany.shp
+    ┃ ┃ ┗ 📜federal_states_borders_germany.shx
     ┃ ┣ 📂plz
     ┃ ┃ ┣ 📜plz-5stellig.dbf
     ┃ ┃ ┣ 📜plz-5stellig.prj
