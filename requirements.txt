@@ -18,3 +18,4 @@ setuptools
 PyYAML
 Cartopy
 sorcery
+-e deps/UrbanHeatPro

@@ -10,6 +10,6 @@ Requests>=2.31.0
 rioxarray>=0.15.0
 Shapely>=2.0.1
 tqdm>=4.66.1
-UrbanHeatPro @ git+ssh://git@github.com/VeraKowalczuk/UrbanHeatPro.git@master
+-e deps/UrbanHeatPro
 xarray[io]>=2023.8.0
 
