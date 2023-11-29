@@ -18,5 +18,3 @@ setuptools
 PyYAML
 Cartopy
 sorcery
-spinx
-myst-parser

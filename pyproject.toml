@@ -45,7 +45,7 @@ docs = [
     "sphinx-autobuild>=2021.3.14",
     "sphinx-design>=0.5.0, <1",
 ]
-all = ["interactive", "docs"]
+all = ["acept[interactive,docs]"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

@@ -68,7 +68,7 @@ $ cd acept
     - Linux & macOS: Use the setup script
 
         ```sh
-        $ setup.sh
+        $ ./setup.sh
         ```
 
     - Windows: Follow the steps of the [Installation Guide for Windows](https://acept.readthedocs.io/en/latest/installation.html)

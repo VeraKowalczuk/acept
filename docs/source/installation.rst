@@ -34,7 +34,15 @@ To run it, execute the following commands inside root directory of the repositor
 
 .. code-block:: console
 
-  $ setup.sh
+  $ ./setup.sh
+
+Then activate the virtual environment:
+
+.. code-block:: console
+
+  $ source venv/bin/activate
+
+
 
 
 On Windows machines
@@ -114,6 +122,7 @@ We recommend integrating the project as a **git submodule** to your project.
 
 .. seealso::
       There is a guide on git submodules `here <https://git-scm.com/book/en/v2/Git-Tools-Submodules>`_.
+      It explains how to add a git submodule to your project and how to use it.
 
 This allows to use the folder structure expected by acept and use it from other packages.
 Then follow these steps for installing the project as a editable package:
@@ -152,5 +161,5 @@ This allows to also use the interactive notebooks of the project and build the d
 After the installation
 ----------------------
 
-Once the project is installed, head to the :doc:`data_setup` section to find out
+Once the project is installed and you activated the created virtual environment, head to the :doc:`data_setup` section to find out
 how to set up the data for the project and package and configure it for your needs.
