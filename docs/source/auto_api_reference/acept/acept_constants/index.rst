@@ -119,7 +119,7 @@ Module Contents
 
    Path to the federal states shape file.
 
-   Path relative to the acept repository root directory: ``data/fed_states/vg2500_bld.shp``
+   Path relative to the acept repository root directory: ``data/fed_states/federal_states_borders_germany.shp``
 
 .. py:data:: TEMP_PATH
 
