@@ -55,7 +55,7 @@ def build_pv_capacity_for_selected_years(selected_shape: gpd.GeoDataFrame, build
     """
     Build PV capacity factor profiles for all years between year_start and year_end for all given buildings from the
     DWD TRY data. The weather data is expected as downloaded from the DWD OPENDATA portal. The profiles will be saved in
-    a temporary directory in the:py:const:`acept.acept_constants.TEMP_PATH` directory as one CSV file per building per year.
+    a temporary directory in the :py:const:`acept.acept_constants.TEMP_PATH` directory as one CSV file per building per year.
 
     :param selected_shape: GeoDataFrame containing the shape of the area around the buildings.
     :param buildings: GeoDataFrame containing the buildings.
@@ -200,7 +200,7 @@ def build_pv_capacity_for_selected_year_with_combined_data(selected_shape: gpd.G
     Build PV capacity factor profiles for a single year between for all given buildings from the
     DWD TRY data. The weather data is expected as combined files for the different features - use the
     `acept.dwd_try_data_handling.combine_dwd_try_data_and_save()` function to combine the data. The profiles will be
-    saved in a temporary directory in the:py:const:`acept.acept_constants.TEMP_PATH` directory as one CSV file per building.
+    saved in a temporary directory in the :py:const:`acept.acept_constants.TEMP_PATH` directory as one CSV file per building.
 
     :param selected_shape: GeoDataFrame containing the shape of the area around the buildings.
     :param buildings: GeoDataFrame containing the buildings.
@@ -226,7 +226,7 @@ def build_pv_capacity_for_selected_years_with_combined_data(selected_shape: gpd.
     Build PV capacity factor profiles for all years between year_start and year_end for all given buildings from the
     DWD TRY data. The weather data is expected as combined files for the different features - use the
     acept.dwd_try_data_handling.combine_dwd_try_data_and_save() function to combine the data. The profiles will be saved
-    in a temporary directory in the:py:const:`acept.acept_constants.TEMP_PATH` directory as one CSV file per building per year.
+    in a temporary directory in the :py:const:`acept.acept_constants.TEMP_PATH` directory as one CSV file per building per year.
 
     :param selected_shape: GeoDataFrame containing the shape of the area around the buildings.
     :param buildings: GeoDataFrame containing the buildings.
@@ -385,7 +385,7 @@ def build_pv_capacity_profile_for_year(selected_shape: gpd.GeoDataFrame, buildin
                                        debug: bool = True):
     """
     Build PV capacity factor profiles for a single year for all given buildings from the DWD TRY data. The profiles are
-    saved in a temporary directory in the:py:const:`acept.acept_constants.TEMP_PATH` directory as one CSV file per building.
+    saved in a temporary directory in the :py:const:`acept.acept_constants.TEMP_PATH` directory as one CSV file per building.
 
     :param selected_shape: GeoDataFrame containing the shape of the area around the buildings.
     :param buildings: GeoDataFrame containing the buildings.
@@ -423,7 +423,7 @@ def calculate_pv_capacity_profile_based_on_tmy_weather(selected_shape: gpd.GeoDa
                                                        debug: bool = True):
     """
     Build PV capacity factor profiles for a typical meteorological year (TMY) for all given buildings from the
-    using the PVGIS weather API. The profiles will be saved in a temporary directory in the:py:const:`acept.acept_constants.TEMP_PATH` directory as
+    using the PVGIS weather API. The profiles will be saved in a temporary directory in the :py:const:`acept.acept_constants.TEMP_PATH` directory as
     one CSV file per building.
 
     :param selected_shape: GeoDataFrame containing the shape of the area around the buildings.

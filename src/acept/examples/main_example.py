@@ -27,7 +27,7 @@ def build_scenario_profiles_for_plz_year(plz: int, year: int = 2011) -> dict:
     Build the scenario profiles for the given input
 
     The scenario profiles are built for the temperature profile and the PV capacity factor profiles
-    The scenario profiles are saved in the:py:const:`acept.acept_constants.TEMP_PATH` directory
+    The scenario profiles are saved in the :py:const:`acept.acept_constants.TEMP_PATH` directory
 
     :param plz: PLZ to search
     :param year: year to use for the scenario profiles
